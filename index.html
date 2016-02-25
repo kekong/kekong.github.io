@@ -3,139 +3,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>首页</title>
-<style>
-body{
-	margin:0px;
-	padding:0px;
-	width:auto;
-	height:auto;
-	background-color:#e9e9e9;
-}
-#header{
-	background-color:#1A1C24;
-	width:auto;
-	height:80px;
-}
-.inner-img{
-	position:absolute;
-	left:40px;
-	top:0px;
-}
-.inner-login{
-	width:500px;
-	height:30px;
-	position:absolute;
-	right:80px;
-	top:-1px;
-}
-.inner-login #inner-login-in{
-	color:white;
-	padding:0 15px; 
-}
-.inner-login #inner-login-in:hover{
-	color:#ababab;
-}
-.inner-nav{
-	width:800px;
-	height:50px;
-	position:absolute;
-	right:80px;
-	top:29px;
-}
-.inner-img-style{
-	float:right;
-	margin-top:15px;
-}
-#zhuce{
-	color:EE6AA7;
-	text-decoration: NONE;
-}
-#zhuce:hover{
-	color:#EE7AE9;
-}
-#make-now{
-	background-color:#F06C0A;
-	color:white;
-	padding:3px 5px;
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:14px;
-}
-#make-now:hover{
-	background-color:#CD5C5C;
-}
-#weixin{
-	color:#fff;
-	padding-left: 15px; 
-}
-.inner-nav ul a{
-	color:#757575;
-	text-decoration:none;
-}
-.inner-nav ul li{
-	float:right;
-	list-style-type:none;
-	display: inline-block;
-	padding-left:40px;
-}
-.inner-nav ul a:hover{
-	color:white;
-	text-decoration:underline;
-	
-}
-.hr-sty{
-	color:#ababab;
-	width:800px;
-	height:1px;
-}
-
-        
-        
-#content{
-	width:1201px;
-	height:311px;
-	text-align:center;
-	border:1px solid red;
-	position:relative;
-	left:80px;
-	overflow:hidden;
-}
-.pic {
-	position:relative; left:-40px;height:311px;width:20000px;overflow:hidden ;display:inline-block; margin:0;
-}   
-.list-item{position:relative;float:left;width:1201px;height:311px;} 
-.pic ul  {
-	display:inline-block;
-	list-style-type:none;
-}
-.mp-banner-ct{position:absolute;top:-15px;left:0;width:10000px}
-.pic > ul {
-	position:relative;float:left;width:1201px;height:311px;display:inline-block;
-}
-#content-main ul {
-	
-}
-</style>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+<script type="text/javascript" src="js/index.js"></script>
 <script>
 window.onload = function(){
 	changeWeixinColor();
 	//changeImg();
 }
-var changeImgTimeout = null;
-var changeImgNum =0 ;
-function changeImg(){
-	 
-}
-var changeColorTimeout = null;
-function changeWeixinColor(){
-	clearTimeout(changeColorTimeout);
-	
-	if(document.getElementById('weixin').style.color == "rgb(255, 255, 255)"){
-		document.getElementById('weixin').style.color = "#CD5C5C";
-	}else{
-		document.getElementById('weixin').style.color = "#fff";
-	}
-	changeColorTimeout = setTimeout("changeWeixinColor()",500);
-}
+
 </script>
 </head>
 
@@ -204,7 +79,148 @@ function changeWeixinColor(){
         <div style=" background-image:url(image/3.png); background-repeat:no-repeat; background-position:50% 50%; width:25%;height:312px" ></div>
 	</div>
     </li></ul>
-</div>-->
+</div>--> 
+<div id="recommed">
+	<div class="recommed-recommed" >精品推荐</div>
+    <div class="recommed-inner">
+    	<ul>
+        	<li>
+            	<div class="recommed-inner-div">
+                	<img id="ecommed-inner-div-img_0" src="image/1.jpg" width="201" height="201" onmouseover="changeCotinerImg('ecommed-inner-div-img_0',1);" onmouseout="changeCotinerImg('ecommed-inner-div-img_0',0)" />
+                    <div class="recommed-inner-name" >这一年兔展上的我</div>
+                    <div class="recommed-inner-time" ><img src="image/1.jpg" width="10" height="10" /><div>666</div></div>
+                </div>
+            </li>
+            <li>
+            	<div class="recommed-inner-div">
+                	<img id="ecommed-inner-div-img_1" src="image/1.jpg" width="201" height="201" onmouseover="changeCotinerImg('ecommed-inner-div-img_1',1);" onmouseout="changeCotinerImg('ecommed-inner-div-img_1',0)" />
+                    <div class="recommed-inner-name" >这一年兔展上的我</div>
+                    <div class="recommed-inner-time" ><img src="image/1.jpg" width="10" height="10" /><div>666</div></div>
+                </div>
+            </li>
+            <li>
+            	<div class="recommed-inner-div">
+                	<img id="ecommed-inner-div-img_2" src="image/1.jpg" width="201" height="201" onmouseover="changeCotinerImg('ecommed-inner-div-img_2',1);" onmouseout="changeCotinerImg('ecommed-inner-div-img_2',0);" />
+                    <div class="recommed-inner-name" >这一年兔展上的我</div>
+                    <div class="recommed-inner-time" ><img src="image/1.jpg" width="10" height="10" /><div>666</div></div>
+                </div>
+            </li>
+              <li>
+            	<div class="recommed-inner-div">
+                	<img id="ecommed-inner-div-img_3" src="image/1.jpg" width="201" height="201" onmouseover="changeCotinerImg('ecommed-inner-div-img_3',1);" onmouseout="changeCotinerImg('ecommed-inner-div-img_3',0);" />
+                    <div class="recommed-inner-name" >这一年兔展上的我</div>
+                    <div class="recommed-inner-time" ><img src="image/1.jpg" width="10" height="10" /><div>666</div></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--行业------>
+
+<div class="select-label">
+   <!-- <div>
+    	 <div>行业</div>
+         <div>场景</div>
+    </div>
+    <div>-->
+    	<ul class="select-label-inner">
+        <li>
+           <div>行业</div>
+           <div>
+                <a href="/">全部</a>
+                <a href="/">互联网/IT</a>
+                <a href="/">地产/家具</a>
+                <a href="/">教育/培训</a>
+                <a href="/">服饰/时尚</a>
+                <a href="/">餐饮/食品</a>
+                <a href="/">金融/银行</a>
+                <a href="/">零售/电商</a>
+                <a href="/">媒体/广告</a>
+                <a href="/">旅游景区</a>
+                <a href="/">其他行业</a>
+                <a href="/">个人</a>
+            </div>
+      </li>
+       <li>
+           <div>场景</div>
+           <div>
+                <a href="/">全部</a>
+                <a href="/">企业宣传</a>
+                <a href="/">品牌推广</a>
+                <a href="/">产品介绍</a>
+                <a href="/">会议邀请</a>
+                <a href="/">课程培训</a>
+                <a href="/">企业招聘</a>
+                <a href="/">活动宣传</a>
+                <a href="/">节日传情</a>
+                <a href="/">事件祝福</a>
+                <a href="/">其他场景</a>
+                <a href="/">2016年新专区</a>
+            </div>
+      </li>
+    </ul>
+    <!--</div>-->
+    
+</div>
+<div><hr class="hr-style-inner" /></div>
+<div id="continer-img">
+	<ul>
+    	 <li>
+            	<div class="recommed-inner-div">
+                	<img src="image/1.jpg" width="201" height="201" />
+                    <div class="recommed-inner-name" >这一年兔展上的我</div>
+                    <div class="recommed-inner-time" ><img src="image/1.jpg" width="10" height="10" /><div>666</div></div>
+                </div>
+            </li>
+              <li>
+            	<div class="recommed-inner-div">
+                	<img src="image/1.jpg" width="201" height="201" />
+                    <div class="recommed-inner-name" >这一年兔展上的我</div>
+                    <div class="recommed-inner-time" ><img src="image/1.jpg" width="10" height="10" /><div>666</div></div>
+                </div>
+            </li>
+             <li>
+            	<div class="recommed-inner-div">
+                	<img src="image/1.jpg" width="201" height="201" />
+                    <div class="recommed-inner-name" >这一年兔展上的我</div>
+                    <div class="recommed-inner-time" ><img src="image/1.jpg" width="10" height="10" /><div>666</div></div>
+                </div>
+            </li>
+             <li>
+            	<div class="recommed-inner-div">
+                	<img src="image/1.jpg" width="201" height="201" />
+                    <div class="recommed-inner-name" >这一年兔展上的我</div>
+                    <div class="recommed-inner-time" ><img src="image/1.jpg" width="10" height="10" /><div>666</div></div>
+                </div>
+            </li>
+             <li>
+            	<div class="recommed-inner-div">
+                	<img src="image/1.jpg" width="201" height="201" />
+                    <div class="recommed-inner-name" >这一年兔展上的我</div>
+                    <div class="recommed-inner-time" ><img src="image/1.jpg" width="10" height="10" /><div>666</div></div>
+                </div>
+            </li>
+    </ul>
+	
+</div>
+<footer>
+	<div>
+    	<ul>
+        	<li>
+            	<a href="/">联系我们</a>
+                <a href="/">关于我们</a>
+                <a href="/">招贤纳士</a>
+                <a href="/">服务条款</a>
+                <a href="/">使用帮助</a>
+                <a href="/">企业付费款</a>
+            </li>
+            <li>
+            	COPYRIGHT © 2015 中北明夷 粤ICP备14051807号-2
+            </li>
+        </ul>
+    	
+    </div>
+</footer>
 <script>
 var box = document.getElementById('content');
         var prev = document.getElementById('mp-banner-pager-prev');
@@ -215,6 +231,7 @@ var box = document.getElementById('content');
         var now = 0;
         var timer = null;
         var flag = false;
+		
 (
 function(){
 		
